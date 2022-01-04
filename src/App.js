@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import './App.css';
-import {Card} from './components/cards/card.component';
+import {CardHolder} from './components/cards/card-holder.component';
 
 class App extends Component {
   constructor() {
@@ -25,13 +25,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Card name = "Javlon"/>
-        {
-          this.state.users.map(item => (
-            <p key={item.id}>{item.name}</p>
-          ))
-        }
-
+        <CardHolder users = {this.state.users}>
+  
+        </CardHolder>
       </div>
     )
   }

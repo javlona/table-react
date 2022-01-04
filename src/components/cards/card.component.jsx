@@ -1,9 +1,8 @@
-import React from "react";
-import './card.style.css'
+import React from 'react'
+import './card.css'
 
-export const Card = (props) => {
-    
-    return (
-        <div className="card">{props.children}</div>
+export const Card = (props) => (
+        <div className="card-container">
+            <p>{props.users.name}</p>
+        </div>
     )
-} 
