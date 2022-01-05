@@ -7,16 +7,19 @@ class App extends Component {
     super();
     this.state = {
       isLoading: true,
-      users: []
+      users: [],
+      showEditMenu: false,
     };
-
   }
 
   componentDidMount(){
+    
     try {
+
       fetch("https://jsonplaceholder.typicode.com/users")
       .then(response => response.json())
       .then(users => this.setState({users: users}));
+
     } catch (err) {
       console.log(err)
     }
@@ -25,9 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CardHolder users = {this.state.users}>
-  
-        </CardHolder>
+        <CardHolder users = {this.state.users} />
       </div>
     )
   }

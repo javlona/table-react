@@ -1,6 +1,18 @@
 import React from 'react'
 import './card.css'
 
+const deleteHandler = (id) => {
+    
+    let deleted = props.users.filter(item => item.id != id)
+    console.log(deleted)
+  }
+
+const updateHandler = (id) => {
+
+    
+
+}
+
 export const Card = (props) => (
         <div className="card-container">
             <img alt="users" src={`https://picsum.photos/300/400?random=${props.users.id}`}></img>
@@ -10,8 +22,8 @@ export const Card = (props) => (
             <p>{props.users.phone}</p>
             <p>{props.users.website}</p>
             <div className="action">
-                <p className="delete">delete</p>
-                <p className="edit">edit</p>
+                <p className="delete" onClick={() => deleteHandler(props.users.id)}>delete</p>
+                <p className="edit" onClick={() => updateHandler(props.users.id)}>edit</p>
             </div>
         </div>
     )
