@@ -1,17 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.action {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete, .edit {
+    display: inline-flex;  
+}
+
+.delete:hover, .edit:hover {
+    text-decoration: underline;
+    color: rgb(0, 68, 255);
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
-    padding: 25px;
-    background: rgb(218, 216, 216);
-    border: 1px solid #eee;
+    padding: 15px;
+    background: rgb(235, 235, 235);
+    border: 2px solid #eee;
     border-radius: 8px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     cursor: pointer;
     transform: translateZ(0);
     transition: all .2s ease-in-out;
 }
 
 .card-container:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-2px); */
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
