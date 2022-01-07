@@ -1,0 +1,26 @@
+.modal {
+    position: fixed;
+    width: 400px;
+    background: rgb(187, 187, 187);
+    z-index: 100;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+input {
+    font-size: 20px;
+}
+
+button {
+    text-align: center;
+    display: block;
+    width: 50%;
+}

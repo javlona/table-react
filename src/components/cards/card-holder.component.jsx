@@ -8,7 +8,12 @@ export const CardHolder = (props) => {
     return (
         <div className="card-holder">
             {props.users.map(user => (
-              <Card key={user.id} users = {user} />
+            <Card 
+                key={user.id} 
+                users = {user} 
+                deleteHandler={ props.deleteHandler } 
+                editHandler={ props.editHandler }
+            />
             ))}
         </div>
     )
