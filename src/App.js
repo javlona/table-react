@@ -1,11 +1,7 @@
-import {
-  Component
-} from 'react'
+import { Component } from 'react'
 import './App.css';
-import {
-  CardHolder
-} from './components/cards/card-holder.component';
-
+import { CardHolder } from './components/cards/card-holder.component';
+import { SearchBar } from './components/search/search.component'
 class App extends Component {
   constructor() {
     super();
@@ -40,11 +36,10 @@ class App extends Component {
     
     return ( 
     <div className = "App" >
-      <input 
-      type = "search"
-      placeholder = "Search..."
-      onChange = {e => this.setState({search: e.target.value})} /> 
-      <CardHolder users = {filteredUsers}/>
+      <SearchBar
+        placeholder = "Search..."
+        handleChange = { e => this.setState({search: e.target.value}) } />
+      <CardHolder users = { filteredUsers }/>
     </div>
 
     )
