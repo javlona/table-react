@@ -16,7 +16,7 @@ export class Modal extends Component {
                 website: "",
             }
         }
-    }
+    }   
 
     componentDidMount() {
         this.setState({ data: {...this.state.data, ...this.props.data}})

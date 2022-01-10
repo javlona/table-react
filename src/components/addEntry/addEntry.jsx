@@ -3,6 +3,6 @@ import './addEntry.css'
 
 export class AddEntry extends Component {
     constructor() {
-                                                                                                                                                   
+                                                                                                        
     }
 }
