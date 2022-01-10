@@ -14,7 +14,7 @@ class App extends Component {
       modalData: {},
     };
   }
-
+    
   componentDidMount() {
 
     try {
