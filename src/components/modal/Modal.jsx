@@ -24,7 +24,6 @@ export class Modal extends Component {
     
     changeHandler = (e) =>  {
         const {value, name} = e.target;
-        console.log(e.target)
         this.setState({ data: {...this.state.data, [name]: value} })
     }
 

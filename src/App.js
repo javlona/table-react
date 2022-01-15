@@ -41,6 +41,10 @@ class App extends Component {
     this.setState({modalData: user})
   }
 
+  updateHandler = (id) => {
+    
+  }
+
   closeModal = () => this.setState({ isModalShown: false })
 
 
